@@ -1,0 +1,29 @@
+spring:
+  profiles:
+    active: qa
+
+server:
+  port: 9092
+   
+---
+
+spring:
+  profiles: dev
+service:
+  name: devserver
+
+---
+
+spring:
+  profiles: prod
+service:
+  name: prodserver
+  
+---
+
+spring:
+  profiles: qa
+service:
+  name: qaserver
+
+
